@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/vnd.icon" href="../img/icon.png">
+        <title>Traveleando</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles.css">
+      </head>
+</head>
+<body>
+
+<!--MENÚ SUPERIOR-->    
+<header class="menubg text-white text-center py-2">
+    <h1 class="display-4">Traveleando</h1>
+    <h4 class="titulo">Viajar es <span class="typed"></span></h4>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="#" id="menuQuienesSomos">¿Quiénes somos?</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="#" id="menuHome">Home</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="#" id="menuItinerarios">Guías en PDF</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!--CONTENDOR GENERAL-->
+<div id="contenido">
+
+<!--CARRUSEL DE IMAGENES-->
+<div id="carrusel" class="container my-5">
+
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1800">
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../img/ny.jpg" class="d-block w-100" alt="Viaje 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Nueva York</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/varsaw.jpg" class="d-block w-100" alt="Viaje 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Varsovia</h3>
+            </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/buda.png" class="d-block w-100" alt="Viaje 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Budapest</h3>
+            </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/paris.jpg" class="d-block w-100" alt="Viaje 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>París</h3>
+            </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/londres.jpg" class="d-block w-100" alt="Viaje 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Londres</h3>
+            </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/berlin.jpg" class="d-block w-100" alt="Viaje 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Berlín</h3>
+            </div>
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+</div>
+
+<!--PÁGINA DE ITINERARIOS EN PDF-->
+<div id="itinerarios" class="container my-5 d-none">
+    <h2 class="text-center">Itinerarios completos PDF, para aprovechar al máximo tus lugares favoritos:</h2>
+    <br>
+    <ul class="list-unstyled d-flex flex-lg-row flex-column align-items-center gap-4">
+
+        <div class="card d-flex flex-column" style="width: 18rem; height: 350px;">
+            <img src="../img/paris.jpg" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">París</h5>
+                <p class="card-text">Elegancia, arte y romance en cada rincón.</p>
+                <a href="../docs/guia_Paris.pdf" download="guia_Paris.pdf" class="btn btn-primary">Descargar guía</a>
+            </div>
+        </div>
+
+        <div class="card d-flex flex-column" style="width: 18rem; height: 350px;">
+            <img src="../img/londres.jpg" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Londres</h5>
+                <p class="card-text">Fusión de historia, modernidad y diversidad cultural</p>
+                <a href="../docs/guia_Londres.pdf" download="guia_Londres.pdf" class="btn btn-primary">Descargar guía</a>
+            </div>
+        </div>
+
+        <div class="card d-flex flex-column" style="width: 18rem; height: 350px;">
+            <img src="../img/varsaw.jpg" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Varsovia</h5>
+                <p class="card-text">La ciudad fénix.</p>
+                <a href="../docs/guia_Varsovia.pdf" download="guia_Varsovia.pdf" class="btn btn-primary mt-3 ms-auto">Descargar guía</a>
+            </div>
+        </div>
+
+        <div class="card d-flex flex-column" style="width: 18rem; height: 350px;">
+            <img src="../img/buda.png" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Budapest</h5>
+                <p class="card-text">La joya del Danubio.</p>
+                <a href="../docs/guia_Budapest.pdf" download="guia_Budapest.pdf" class="btn btn-primary">Descargar guía</a>
+            </div>
+        </div>
+
+    </ul>
+</div>
+
+
+
+<!--PÁGINA QUIENES SOMOS-->
+
+<div id="quienesSomos" class="container mt-5 d-none">
+    <div class="text-justify">
+        <h3>¡Bienvenid@s a <span class="fontMenuColor">Traveleando</span>, viajer@s!</h3>
+        <p class="lead">Traveleando es tu puerta de entrada a un mundo de aventuras y descubrimientos. Explora itinerarios emocionantes y descarga guías en PDF de destinos fascinantes en todo el mundo. Sumérgete en la diversidad de culturas, sabores y paisajes mientras te inspiras para tu próxima aventura.</p>
+        <p class="lead">Descarga las detalladas guías que te proporcionamos y lleva contigo la esencia de cada lugar, permitiéndote explorar a tu propio ritmo y según tus preferencias. Prepárate para inspirarte, soñar y planificar tus próximas escapadas. ¡Descubre el mundo con nosotros y haz de cada viaje una experiencia única e inolvidable!</p>
+    </div>
+</div>
+
+</div>
+
+
+<footer class="bg-dark text-white text-center py-3">
+    <p>Página desarrollada por Miguel Ángel de la Calle Cuadra.2024.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="./main.js"></script>
+</body>
+</html>
+
