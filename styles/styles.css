@@ -20,7 +20,7 @@ a {
 }
 
 .menubg {
-    background-color: #cf9f45; 
+    background-color: #3790da; 
   }
 
 .fontMenuColor {
@@ -37,4 +37,16 @@ a {
     max-width: 1600px;
     max-height: 80%;
     margin: auto; 
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+#txtHome {
+  font-family: 'Lemon', serif;
+  font-size: 25px;
+  text-align: center;
 }
